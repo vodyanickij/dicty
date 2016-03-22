@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+
+    <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <!--header-->
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+   	    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+   		  <span class="sr-only">
+   		  Toggle navigation
+		  </span>
+		  <span class="icon-bar"></span>
+   		  <span class="icon-bar"></span>
+   		  <span class="icon-bar"></span>
+   	    </button>
+   	    <a class="navbar-brand" href="#">
+   		Dicty
+   	    </a>
+      </div>
+      <div  class="navbar-collapse collapse">
+		<!--search bar-->
+		<form class="navbar-form navbar-right">
+    	  <input class="form-control" type="text" placeholder="Search..."></input>
+		    <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+		</form>
+    	<ul class="nav navbar-nav navbar-right">
+		  <!--login form-->
+    	  <li class="dropdown">
+    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			  <i class="fa fa-sign-in"></i>
+			  Log in <b class="caret"></b>
+    		</a>
+    	    <ul class="dropdown-menu">
+    		  <form class="navbar-form" role="form" method="post" action="PDO.php">
+    		    <div class="form-group">
+				  <input class="form-control" type="text" placeholder="login" name="login" />
+    		    </div>
+    		    <div class="form-group">
+    			  <input class="form-control" type="password" placeholder="password" name="password" />
+				  <div class="checkbox">
+				    <label><input type="checkbox"> Remember me</label>
+				  </div>
+				  <div>
+				    <button class="btn-primary" type="submit" style="margin-top: 10px" name="submit">
+					  Log in
+				    </button>
+				    <a href="Registration.html">
+				      <button class="btn-primary" type="button">
+					    Registration
+				      </button>
+				    </a>
+				  </div>
+    		    </div>
+    		  </form>
+		    </ul>
+    	  </li>
+    	  <li class="dropdown">
+    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		      <i class="fa fa-user"></i>
+			    Profile <b class="caret"></b>
+    		</a>
+    		<ul class="dropdown-menu">
+    		  <li><a href="#">p1</a></li>
+    		  <li><a href="#">p2</a></li>
+    		  <li><a href="#">p3</a></li>
+    		</ul>
+    	  </li>
+		  <li class="dropdown">
+    		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			  <i class="fa fa-cog"></i>
+				Settings <b class="caret"></b>
+    		</a>
+    		<ul class="dropdown-menu">
+    		  <li><a href="#">p1</a></li>
+    		  <li><a href="#">p2</a></li>
+    		  <li><a href="#">p3</a></li>
+			</ul>
+		  </li>
+		  <li>
+    		<a href="#">
+			  <i class="fa fa-info-circle"></i>
+				Help
+    		</a>
+		  </li>
+    	</ul>
+      </div>
+    </div>
+  </div>
+  <a href="words.html">My_Words</a>
+  <!-- footer-->
+  <div class="container text-center">
+	<hr />
+	<div class="row">
+	  <div class="col-lg-12">
+	    <div class="col-md-3">
+		  <ul class="nav nav-pills nav-stacked">
+	        <li><a href="#">Lorem ipsum</a></li>
+			<li><a href="#">Lorem ipsum</a></li>
+		  </ul>
+		</div>
+		<div class="col-md-3">
+		  <ul class="nav nav-pills nav-stacked">
+		    <li><a href="#">Lorem ipsum</a></li>
+		    <li><a href="#">Lorem ipsum</a></li>
+		  </ul>
+		</div>
+		<div class="col-md-3">
+			<ul class="nav nav-pills nav-stacked">
+			  <li><a href="#">Lorem ipsum</a></li>
+			  <li><a href="#">Lorem ipsum</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+		  <ul class="nav nav-pills nav-stacked">
+			<li><a href="#">Lorem ipsum</a></li>
+			<li><a href="#">Lorem ipsum</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<hr>
+	<div class="row">
+	  <div class="col-lg-12">
+	    <ul class="nav nav-pills nav-justified">
+		  <li><a href="/">© 2016 Lorem ipsum</a></li>
+		  <li><a href="#">Terms of Service</a></li>
+		  <li><a href="#">Privacy</a></li>
+	    </ul>
+	  </div>
+	</div>
+  </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
