@@ -1,6 +1,5 @@
 <?php
 
-//include('simple_html_dom.php');
 include('bd.php');
 
 class Word 
