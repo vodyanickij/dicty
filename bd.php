@@ -5,8 +5,14 @@
 	
 	// Соединяемся, выбираем базу данных
 	function connect() {
-		$db = new PDO("mysql:host=DB_HOSTNAME;dbname=dict",DB_USERNAME,DB_PASSWORD);
-		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+		try 
+		{
+			$db = new PDO("mysql:host=DB_HOSTNAME;dbname=dict",DB_USERNAME,DB_PASSWORD);
+			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+		}
+		}catch(PDOException $e){
+        echo $e->getMessage();
+    	}
 		return $db;
 	}	
 ?>
